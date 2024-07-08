@@ -1,0 +1,23 @@
+{
+  "name": "clipboard_picture_gallary",
+  "version": "1.0.0",
+  "description": "- 클립보드의 사진을 가져온다.\r - 사용자가 사진을 배열할 수 있도록 구성한다.\r - 사진만 있는 페이지를 제공한다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint src/app.js",
+    "build:dev": "webpack serve",
+    "build:production": "webpack --config webpack.config.prod.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "eslint": "^9.6.0",
+    "globals": "^15.8.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
