@@ -4,8 +4,50 @@
 
 html {
   font-family: sans-serif;
+  height: 100%;
 }
 
 body {
   margin: 0;
+  height: 100%;
+}
+
+.main-page {
+  height: 100%;
+  max-width: 70rem;
+  box-shadow: 0 0 0.5rem black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.main-page section {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.images {
+}
+
+.buttons {
+}
+
+.card {
+  width: 20%;
+  height: 10rem;
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem black;
+}
+
+button {
+  width: 20%;
+  height: 4rem;
+  padding: 1rem;
+  border: white;
+  box-shadow: 0 0 0.5rem black;
 }
