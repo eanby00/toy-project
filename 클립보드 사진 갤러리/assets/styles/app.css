@@ -8,46 +8,88 @@ html {
 }
 
 body {
-  margin: 0;
-  height: 100%;
-}
-
-.main-page {
+  margin: 0 auto;
   height: 100%;
   max-width: 70rem;
-  box-shadow: 0 0 0.5rem black;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.main-page section {
-  padding: 1rem;
+section {
+  width: 100%;
+  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
-.images {
+.image-container {
+  flex-basis: 70%;
+  justify-content: left;
 }
 
-.buttons {
+.image-container .default-info {
+  text-align: center;
+  width: 100%;
+}
+
+.image-container span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.button-container {
+  flex-basis: 30%;
+  justify-content: center;
 }
 
 .card {
-  width: 20%;
-  height: 10rem;
   padding: 1rem;
-  box-shadow: 0 0 0.5rem black;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.2rem;
+}
+
+.image {
+  flex: 1 1 20%;
+  height: 15rem;
 }
 
 button {
-  width: 20%;
-  height: 4rem;
   padding: 1rem;
+  width: 25%;
+  background-color: white;
   border: white;
-  box-shadow: 0 0 0.5rem black;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+button.first {
+  background: #3dc2ec;
+  border: 0.2rem solid #3dc2ec;
+  color: white;
+}
+
+button.first:hover,
+button.first:active {
+  background: #4c3bcf;
+  border: 0.2rem solid #4c3bcf;
+}
+
+button.second {
+  background: white;
+  color: #c80036;
+  border: 0.2rem solid #c80036;
+}
+
+button.second:hover,
+button.second:active {
+  background: #c80036;
+  color: white;
+  border: 0.2rem solid #c80036;
 }
