@@ -8,24 +8,42 @@
     <script src="./assets/scripts/app.js" defer type="module"></script>
   </head>
   <body>
-    <section class="image-container">
-      <!-- <p class="default-info">
+    <template id="buttons">
+      <button class="first">인쇄</button>
+      <button class="second">추가</button>
+    </template>
+    <template id="default-info">
+      <p>
         윈도우 기본 캡쳐 기능<span>( window + shift + s )</span>을 이용하여
         원하시는 사진을 캡쳐해주세요.<br />클립보드의 사진을 10초마다
         가져옵니다. 바로 추가되지 않는다고 당황하지 마세요.
-      </p> -->
-      <div class="card image">test1</div>
-      <div class="card image">test2</div>
-      <div class="card image">test3</div>
-      <div class="card image">test4</div>
-      <div class="card image">test5</div>
-      <div class="card image">test6</div>
-      <div class="card image">test7</div>
-      <div class="card image">test8</div>
-    </section>
-    <section class="button-container">
-      <button class="first">배열</button>
-      <button class="second">취소</button>
+      </p>
+    </template>
+    <div class="backdrop display"></div>
+    <div class="modal-container card">
+      <section>
+        <div class="modal-image"></div>
+        <div class="modal-button-container">
+          <button class="first">확인</button>
+          <button class="second">삭제</button>
+        </div>
+      </section>
+    </div>
+    <section class="main-page">
+      <section class="image-container">
+        <div class="card image">test1</div>
+        <div class="card image">test2</div>
+        <div class="card image">test3</div>
+        <div class="card image">test4</div>
+        <div class="card image">test5</div>
+        <div class="card image">test6</div>
+        <div class="card image">test7</div>
+        <div class="card image">test8</div>
+      </section>
+      <section class="button-container">
+        <button class="first">배열</button>
+        <button class="second">취소</button>
+      </section>
     </section>
   </body>
 </html>
